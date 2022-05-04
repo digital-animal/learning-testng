@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+ 
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.zahid.AppTest"/>
+      <class name="com.zahid.FirstTest"/>
+      <class name="com.zahid.SecondTest"/>
+      <class name="com.zahid.ThirdTest"/>
+   </classes>
+ </test>
+</suite>
+
+<!-- <suite name="Suite">
+  <test name="Test">
+    <packages>
+      <package name="com.zahid.*" />
+   </packages>
+ </test>
+</suite> -->

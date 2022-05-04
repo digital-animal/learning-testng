@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+ 
+<suite name="Suite" verbose="2">
+
+  <test name="Calculator Test">
+    <parameter name="x" value="6"/>
+    <parameter name="y" value="4"/>
+    <parameter name="add" value="10"/>
+    <parameter name="sub" value="2"/>
+    <parameter name="mul" value="24"/>
+    <parameter name="div" value="1.5"/>
+    <parameter name="mod" value="2"/>
+    <parameter name="pow" value="1296"/>
+
+    <classes>
+      <class name="com.zahid.CalculatorTest"/>
+   </classes>
+ </test>
+
+<test name="Rectangle Test">
+
+    <groups>
+      <run>
+        <include name="sanity"/>
+        <exclude name="regression"/>
+      </run>
+    </groups>
+
+    <classes>
+      <class name="com.zahid.RectangleTest"/>
+   </classes>
+ </test>
+
+</suite>
+
+
